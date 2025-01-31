@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,26 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="h-screen bg-transparent">
+          <div className="bg-gradient-to-tr from-blue-400 to-transparent to-20% h-screen w-screen absolute top-0 left-0 -z-40"></div>
+          <div className="bg-gradient-to-bl from-purple-400 to-transparent to-20% h-screen w-screen absolute top-0 left-0 -z-40"></div>
+          <div className="bg-white h-screen w-screen absolute top-0 left-0 -z-50"></div>
+
+          <div className="flex flex-col">
+            <div className="flex flex-row py-12 px-16 justify-between items-center">
+              <Link href="/"><h3 className="font-bold text-lg text-black hover:text-purple-500">Home</h3></Link>
+              <Link href="/">
+                <h1 className="font-bold text-4xl text-black bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">TasksMonster</h1>
+              </Link>
+              <Link href="/login">
+                <h3 className="font-bold text-lg text-black hover:text-purple-500">Login</h3>
+              </Link>
+            </div>
+            <div>
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
