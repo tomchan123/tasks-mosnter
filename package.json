@@ -11,9 +11,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@prisma/client": "^6.3.0",
     "next": "15.1.6",
+    "prisma": "^6.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
