@@ -30,6 +30,9 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^3.2.5
         version: 3.2.5(react@18.3.1)(storybook@8.4.7)
+      '@nuxtjs/storybook':
+        specifier: ^8.3.3
+        version: 8.3.3(@types/node@22.13.5)(eslint@9.21.0(jiti@2.4.2))(lightningcss@1.29.1)(magicast@0.3.5)(nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.5)(db0@0.2.4)(eslint@9.21.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.8)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0))(optionator@0.9.4)(rollup@4.34.8)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
       '@nuxtjs/tailwindcss':
         specifier: ^6.13.1
         version: 6.13.1(magicast@0.3.5)
@@ -800,6 +803,10 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
+  '@nuxtjs/storybook@8.3.3':
+    resolution: {integrity: sha512-pyZsSB+rIzPaZlBIuYHQdZvd+6kFuCLfjNVtHzvmtejwv2dNQPwUw4fBqIIzShSlbTM/JLTGJrP7llt6CFYqbg==}
+    engines: {node: '>=18.0.0'}
+
   '@nuxtjs/tailwindcss@6.13.1':
     resolution: {integrity: sha512-atL2SaPsxLfMTlXUQvr1UpDYdz6ocNOhH35H+t7M++g4r79QiQScJ7XuyyMR9AyBN19lkPA3nw7NXxazXmYxlA==}
 
@@ -1176,6 +1183,16 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
+  '@storybook/core-common@8.4.7':
+    resolution: {integrity: sha512-WgVg9UR/Ye4vnoB0i9pQkJsy47IlerkBaxSHycaxIlg87znrYL1K31a5Os1qUXq+eJbH6Jk70dfUmbRh/UOS6A==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
+  '@storybook/core-server@8.4.7':
+    resolution: {integrity: sha512-RW5R+kqRmcP+7QNTmhcrh46qWYkVpxaRlN8MmkHV52m2H5nbBrvgwc3/sb3wdgm1PEU0K5wxT0cmAMIwtnHC9Q==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
   '@storybook/core@8.4.7':
     resolution: {integrity: sha512-7Z8Z0A+1YnhrrSXoKKwFFI4gnsLbWzr8fnDCU6+6HlDukFYh8GHRcZ9zKfqmy6U3hw2h8H5DrHsxWfyaYUUOoA==}
     peerDependencies:
@@ -1472,8 +1489,8 @@ packages:
   '@vue/devtools-shared@7.7.2':
     resolution: {integrity: sha512-uBFxnp8gwW2vD6FrJB8JZLUzVb6PNRG0B0jBnHsOH8uKyva2qINY8PTF5Te4QlTbMDqU5K6qtJDr6cNsKWhbOA==}
 
-  '@vue/language-core@2.2.4':
-    resolution: {integrity: sha512-eGGdw7eWUwdIn9Fy/irJ7uavCGfgemuHQABgJ/hU1UgZFnbTg9VWeXvHQdhY+2SPQZWJqWXvRWIg67t4iWEa+Q==}
+  '@vue/language-core@2.2.8':
+    resolution: {integrity: sha512-rrzB0wPGBvcwaSNRriVWdNAbHQWSf0NlGqgKHK5mEkXpefjUlVRP62u03KvwZpvKVjRnBIQ/Lwre+Mx9N6juUQ==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -1781,6 +1798,10 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  chalk@5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   change-case@5.4.4:
     resolution: {integrity: sha512-HRQyTk2/YPEkt9TnUPbOpr64Uw3KOicFWPVBb+xiHvd6eBx/qPr9xqfBFDT8P2vWsvvz4jbEkfDe71W3VyNu2w==}
@@ -4821,16 +4842,13 @@ packages:
   vue-bundle-renderer@2.1.1:
     resolution: {integrity: sha512-+qALLI5cQncuetYOXp4yScwYvqh8c6SMXee3B+M7oTZxOgtESP0l4j/fXdEJoZ+EdMxkGWIj+aSEyjXkOdmd7g==}
 
-  vue-component-meta@2.2.4:
-    resolution: {integrity: sha512-Nv2B3+PwSH84ZpJDvOdn+kvkWv0kJAke6VljiFDatpE169C4Gt8oEUPoF5LdUkrdpjbWa4vvIDV4uueA8RSnaQ==}
+  vue-component-meta@2.2.8:
+    resolution: {integrity: sha512-fgcP61P45AA1DacW+/532mivO5j48EEpmI7To8PK3gCVgL023QuEAPzfTA9hB6lW2hgdqiMf4gLON972pYC2+g==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
-
-  vue-component-type-helpers@2.2.4:
-    resolution: {integrity: sha512-F66p0XLbAu92BRz6kakHyAcaUSF7HWpWX/THCqL0TxySSj7z/nok5UUMohfNkkCm1pZtawsdzoJ4p1cjNqCx0Q==}
 
   vue-component-type-helpers@2.2.8:
     resolution: {integrity: sha512-4bjIsC284coDO9om4HPA62M7wfsTvcmZyzdfR0aUlFXqq4tXxM1APyXpNVxPC8QazKw9OhmZNHBVDA6ODaZsrA==}
@@ -5866,6 +5884,50 @@ snapshots:
       - vue-tsc
       - yaml
 
+  '@nuxtjs/storybook@8.3.3(@types/node@22.13.5)(eslint@9.21.0(jiti@2.4.2))(lightningcss@1.29.1)(magicast@0.3.5)(nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.5)(db0@0.2.4)(eslint@9.21.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.8)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0))(optionator@0.9.4)(rollup@4.34.8)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)':
+    dependencies:
+      '@nuxt/devtools-kit': 1.7.0(magicast@0.3.5)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+      '@storybook-vue/nuxt': 8.3.3(@types/node@22.13.5)(eslint@9.21.0(jiti@2.4.2))(lightningcss@1.29.1)(magicast@0.3.5)(nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.5)(db0@0.2.4)(eslint@9.21.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.8)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0))(optionator@0.9.4)(rollup@4.34.8)(storybook@8.4.7)(terser@5.39.0)(typescript@5.7.3)(vite@6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
+      '@storybook/core-common': 8.4.7(storybook@8.4.7)
+      '@storybook/core-server': 8.4.7(storybook@8.4.7)
+      chalk: 5.4.1
+      consola: 3.4.0
+      defu: 6.1.4
+      get-port-please: 3.1.2
+      storybook: 8.4.7
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - '@biomejs/biome'
+      - '@types/node'
+      - bufferutil
+      - eslint
+      - less
+      - lightningcss
+      - magicast
+      - meow
+      - nuxt
+      - optionator
+      - prettier
+      - rolldown
+      - rollup
+      - sass
+      - sass-embedded
+      - stylelint
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - tsx
+      - typescript
+      - utf-8-validate
+      - vite
+      - vls
+      - vti
+      - vue
+      - vue-tsc
+      - yaml
+
   '@nuxtjs/tailwindcss@6.13.1(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 3.15.4(magicast@0.3.5)
@@ -6261,6 +6323,14 @@ snapshots:
     dependencies:
       storybook: 8.4.7
 
+  '@storybook/core-common@8.4.7(storybook@8.4.7)':
+    dependencies:
+      storybook: 8.4.7
+
+  '@storybook/core-server@8.4.7(storybook@8.4.7)':
+    dependencies:
+      storybook: 8.4.7
+
   '@storybook/core@8.4.7':
     dependencies:
       '@storybook/csf': 0.1.13
@@ -6340,7 +6410,7 @@ snapshots:
       storybook: 8.4.7
       typescript: 5.7.3
       vite: 6.0.9(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.39.0)(yaml@2.7.0)
-      vue-component-meta: 2.2.4(typescript@5.7.3)
+      vue-component-meta: 2.2.8(typescript@5.7.3)
       vue-docgen-api: 4.79.2(vue@3.5.13(typescript@5.7.3))
     transitivePeerDependencies:
       - vue
@@ -6715,7 +6785,7 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
-  '@vue/language-core@2.2.4(typescript@5.7.3)':
+  '@vue/language-core@2.2.8(typescript@5.7.3)':
     dependencies:
       '@volar/language-core': 2.4.11
       '@vue/compiler-dom': 3.5.13
@@ -7044,6 +7114,8 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  chalk@5.4.1: {}
 
   change-case@5.4.4: {}
 
@@ -10321,16 +10393,14 @@ snapshots:
     dependencies:
       ufo: 1.5.4
 
-  vue-component-meta@2.2.4(typescript@5.7.3):
+  vue-component-meta@2.2.8(typescript@5.7.3):
     dependencies:
       '@volar/typescript': 2.4.11
-      '@vue/language-core': 2.2.4(typescript@5.7.3)
+      '@vue/language-core': 2.2.8(typescript@5.7.3)
       path-browserify: 1.0.1
-      vue-component-type-helpers: 2.2.4
+      vue-component-type-helpers: 2.2.8
     optionalDependencies:
       typescript: 5.7.3
-
-  vue-component-type-helpers@2.2.4: {}
 
   vue-component-type-helpers@2.2.8: {}
 
