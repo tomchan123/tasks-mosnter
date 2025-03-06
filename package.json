@@ -15,8 +15,14 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "eslint": "^9.0.0",
+    "lucide-vue-next": "^0.477.0",
     "nuxt": "^3.15.4",
+    "shadcn-nuxt": "1.0.2",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7",
     "vite": "6.0.9",
     "vue": "latest",
     "vue-router": "latest"
@@ -25,12 +31,12 @@
     "@chromatic-com/storybook": "^3.2.5",
     "@nuxtjs/storybook": "^8.3.3",
     "@nuxtjs/tailwindcss": "^6.13.1",
+    "@storybook-vue/nuxt": "^8.3.3",
     "@storybook/addon-essentials": "8.4.7",
     "@storybook/addon-interactions": "8.4.7",
     "@storybook/blocks": "8.4.7",
     "@storybook/test": "8.4.7",
     "@storybook/vue3": "8.4.7",
-    "@storybook-vue/nuxt": "^8.3.3",
     "eslint-plugin-storybook": "^0.11.3",
     "eslint-plugin-unused-imports": "^4.1.4",
     "storybook": "8.4.7",
@@ -42,5 +48,6 @@
       "plugin:storybook/recommended",
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.5.2+sha1.ca68c0441df195b7e2992f1d1cb12fb731f82d78"
 }
