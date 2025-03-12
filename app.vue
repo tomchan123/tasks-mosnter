@@ -1,6 +1,7 @@
+<script setup lang="ts">
+import NavMenuBar from "./components/NavMenuBar.vue";
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NavMenuBar />
 </template>
