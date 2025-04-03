@@ -23,12 +23,10 @@ const navMenuItemData: NavMenuItemData[] = [
             class="group/item"
             @click="navigate"
           >
-            <div
-              class="flex flex-row justify-center items-center gap-1 h-8 px-2"
-            >
+            <div class="flex flex-row justify-center items-center h-8 px-2">
               <Icon :name="item.iconName" class="text-xl" />
               <p
-                class="text-base hidden opacity-0 group-hover/item:block group-hover/item:opacity-100 transition"
+                class="text-base max-w-0 overflow-hidden group-hover/item:max-w-xl group-hover/item:block transition-all ease-in-out duration-300 m-0 group-hover/item:ml-1"
               >
                 {{ item.title }}
               </p>
