@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
