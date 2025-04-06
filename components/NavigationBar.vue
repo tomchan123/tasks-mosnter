@@ -13,7 +13,9 @@ const navMenuItemData: NavMenuItemData[] = [
 </script>
 
 <template>
-  <NavigationMenu>
+  <NavigationMenu
+    class="bg-background rounded-xl p-2 ring-2 ring-accent shadow-md"
+  >
     <NavigationMenuList>
       <NavigationMenuItem v-for="item in navMenuItemData" :key="item.url">
         <NuxtLink v-slot="{ isActive, href, navigate }" :to="item.url" custom>
@@ -23,7 +25,7 @@ const navMenuItemData: NavMenuItemData[] = [
             class="group/item"
             @click="navigate"
           >
-            <div class="flex flex-row justify-center items-center h-8 px-2">
+            <div class="flex flex-row justify-center items-center h-6 px-2">
               <Icon :name="item.iconName" class="text-xl" />
               <p
                 class="text-base max-w-0 overflow-hidden group-hover/item:max-w-xl group-hover/item:block transition-all ease-in-out duration-300 m-0 group-hover/item:ml-1"
